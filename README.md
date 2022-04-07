@@ -6,7 +6,7 @@ Links:
 - [Figure's Calculator](./figuresCalculator/figura.html)
 #### Preview:
 
-<img src="./figuresCalculator/Animation2.gif" alt="">
+<img src="./figuresCalculator/img/Animation2.gif" alt="">
 
 ### Text-Books & Websites to Practice
 - Eloquent Javascript
