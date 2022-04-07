@@ -42,6 +42,11 @@ body{
     
 }
 
+.container-img{
+    height: 10rem;
+    width: auto;
+}
+
 .square{
     position: absolute;
     width: 28.7rem;
@@ -118,7 +123,7 @@ body{
     position: relative;
     margin: 2rem auto;
     width: 31.5rem;
-    
+    height: 35.9rem;
     padding: 2rem;
     background-color: #003b4a;
     border-radius: 1rem;
@@ -153,11 +158,12 @@ button{
 }
 
 button:hover{
-    background-color: #F2CB05;
+    cursor:pointer;
+    background-color: #EDCC11;
 }
 
 button:focus{
-    background-color: red;
+    background-color: #EDCC11;
 }
 
 .answer{
@@ -171,9 +177,13 @@ button:focus{
 /* footer */
 footer{
     text-align: center;
-    margin: 2rem 4.4rem;
-    font-size: 1rem;
+    margin: 1rem 4.4rem;
+    font-size: 1.4rem;
     width: 28.7rem;
+}
+
+footer a{
+    color: aqua;
 }
 
 @keyframes pages {
