@@ -104,4 +104,6 @@ dist
 .tern-port
 
 # myConfig
-.img
+*.png
+*.gif
+*.svg
