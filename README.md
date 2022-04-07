@@ -6,3 +6,5 @@ Here I will put my Pure-Javascript Excersises
 - Platzi
 - FreeCodeCamp
 - JavaScript30
+
+<img src="./practiceJavascriptCoursePlatzi/Animation2.gif" alt="">
