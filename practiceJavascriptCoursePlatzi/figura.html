@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geometric Figures</title>
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="./figura.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200&display=swap" rel="stylesheet">
+    <script src="./figura.js"></script>
+
+</head>
+<body>
+    <header>
+        <h1 class="title-home" id="titleHome">Figure's Calculator</h1>
+        <h2 class="title-pages" id="titlePages">Figure's Calculator</h2>
+        <div class="selectYourFigure" id="selyourfig">SELECT YOUR FIGURE:</div>
+        <nav class="nav-pages" id="navPages">
+            <ul>
+                <li>   
+                    <div class="selectorFigure" onclick="showPageSquare('pageSquare')">
+                        <img src="./img/Square.svg" alt="Square">
+                        
+                    </div></li>
+
+                <li>
+                    <div class="selectorFigure" onclick="showPageCircle('pageCircle')">
+                        <img src="./img/Circle.svg" alt="Circle">
+                        
+                    </div></li>
+
+                <li>
+                    <div class="selectorFigure" onclick="showPageTriangle('pageTriangle')">
+                        <img src="./img/Triangle.svg" alt="Triangle">
+                        
+                    </div></li>
+
+                <li>
+                    <div class="selectorFigure" onclick="showPageRectangle('pageRectangle')">
+                        <img src="./img/Rectangle.svg" alt="Rectangle">
+                       
+                    </div></li>
+            </ul>
+        </nav>
+        
+    </header>
+    <main>
+        <section class="page" id="pageHome">
+            <div class="square"></div>
+            <div class="container-home">
+                <ul>
+                    <li>   
+                        <div class="selectorFigure" onclick="showPageSquare('pageSquare')">
+                            <img src="./img/Square.svg" alt="Square">
+                            <span>SQUARE</span>
+                        </div></li>
+
+                    <li>
+                        <div class="selectorFigure" onclick="showPageCircle('pageCircle')">
+                            <img src="./img/Circle.svg" alt="Circle">
+                            <span>CIRCLE</span>
+                        </div></li>
+
+                    <li>
+                        <div class="selectorFigure" onclick="showPageTriangle('pageTriangle')">
+                            <img src="./img/Triangle.svg" alt="Triangle">
+                            <span>TRIANGLE</span>
+                        </div></li>
+
+                    <li>
+                        <div class="selectorFigure" onclick="showPageRectangle('pageRectangle')">
+                            <img src="./img/Rectangle.svg" alt="Rectangle">
+                            <span>RECTANGLE</span>
+                        </div></li>
+                </ul>
+            </div>
+        </section>
+        
+
+        <section class="pageS" id="pageSquare">
+            
+            <div class="container-pages">
+                <h3>Square</h3>
+                <figure>
+                    <img src="./img/squareFigure.svg" alt="">
+                </figure>
+                
+            <form action="">
+                <label for="inputSquare">
+                    <span>Introduce to Square's side:</span>
+                    <input type="number" id="inputSquare" placeholder="Side">
+                    </label>
+                   
+                <!-- I need a button with type="button" to not reload page -->
+                <button type="button"  onclick="showAreaSquare()">
+                    Area
+                </button>
+
+                <button type="button" onclick="showPerimeterSquare()">
+                    Perimeter
+                </button>
+                <p class="answer" id="answerSquare"></p>
+            </form>
+            </div>
+        </section>
+
+        <section class="pageC" id="pageCircle">
+            <div class="container-pages">
+            <h3>Circle</h3>
+            <figure>
+                <img src="./img/circleFigure.svg" alt="">
+            </figure>
+            <form action="">
+                <label for="inputCircle">
+                    <span>Introduce to ratio of a Circle: </span>
+                    <input type="number" id="inputCircle" placeholder="Ratio">
+                    
+                </label>
+
+                <button type="button" onclick="showAreaCircle()">Compute Area</button>
+                <button type="button" onclick="showPerimeterCircle()">Compute Perimeter</button>
+                <p class="answer" id="answerCircle"></p>
+            </form>
+            </div>
+        </section>
+
+
+        <section class="pageR" id="pageRectangle">
+            <div class="container-pages">
+            <h3>Rectangle</h3>
+            <figure>
+                <img src="./img/rectangleFigure.svg" alt="">
+            </figure>
+            
+            <form action="">
+                <label for="inputRectangle">
+                    <span>Introduce the sides of Rectangle</span>
+                    <input class="input1 type="number" id="inputRectangle1" placeholder="Base">
+                    <input class="input2" type="number" id="inputRectangle2" placeholder="Height">
+                    
+                </label>
+
+                <button type="button" onclick="showAreaRectangle()">Area</button>
+                <button type="button" onclick="showPerimeterRectangle()">Perimeter</button>
+                <p class="answer" id="answerRectangle"></p>
+            </form>
+        </div>
+        </section>
+
+        <section class="pageT" id="pageTriangle">
+            <div class="container-pages">
+                <h3>Triangle</h3>
+                <figure>
+                    <img src="./img/triangleFigure.svg" alt="">
+                </figure>
+                
+                <form action="">
+                    <label for="inputTriangle">
+                        <span>Introduce the sides of Triangle</span>
+                        <input class="input1 type="number" id="inputTriangle1" placeholder="Base">
+                        <input class="input2" type="number" id="inputTriangle2" placeholder="Height">
+                        
+                    </label>
+    
+                    <button type="button" onclick="showAreaTriangle()">Area</button>
+                    <button type="button" onclick="showPerimeterTriangle()">Perimeter</button>
+                    <p class="answer" id="answerTriangle"></p>
+                </form>
+            </div>
+        </section>
+        
+    </main>
+
+    <footer>
+        Hello a tech lover.✌️, Am <a href="">David</a>. Thanks for visited my Workshop.
+    </footer>
+</body>
+</html>
