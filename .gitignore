@@ -103,7 +103,5 @@ dist
 # TernJS port file
 .tern-port
 
-#images
-.png
-.svg
-.gif
+# myConfig
+.img
