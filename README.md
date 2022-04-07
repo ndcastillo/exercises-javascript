@@ -3,7 +3,7 @@ Here I will put my Pure-Javascript Excersises
 
 ## List of Workshop
 Links:
-- [Figure's Calculator](./figuresCalculator/figura.html)
+- [Figure's Calculator](./figuresCalculator/)
 #### Preview:
 
 <img src="./figuresCalculator/img/Animation2.gif" alt="">
