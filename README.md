@@ -1,4 +1,4 @@
-# Exersises and Challenges of JavaScript
+# Exercises and Challenges of JavaScript
 Here I will put my Pure-Javascript Excersises
 
 ## List of Workshop
