@@ -1,0 +1,137 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.6rem;
+    font-family: 'Inter', sans-serif;
+    background-color: #88817D;
+    color: #fff;
+}
+
+header ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header h1{
+    font-size: 2rem;
+    color: #C25F28;
+}
+
+header li{
+    padding: 0.5rem;
+}
+
+.container{
+    box-shadow: 10px 14px 67px 0px rgba(0,0,0,0.22);
+-webkit-box-shadow: 10px 14px 67px 0px rgba(0,0,0,0.22);
+-moz-box-shadow: 10px 14px 67px 0px rgba(0,0,0,0.22);
+    width: 31.9rem;
+    margin: 3rem;
+    padding: 3rem;
+    background-color: #222222;
+    border-radius: 1rem;
+}
+
+.item{
+    font-size: 2rem;
+    display: block;
+    text-align: center;    
+    font-size: 1.4rem;
+}
+
+.product-price{
+    display: flex;
+    padding: 1rem;
+    border-radius: 1rem;
+    margin: 1rem 0 1rem 0;
+    border: 0.2rem #88817D solid;
+    color: #C25F28;
+}
+.label-cupon{
+    padding: 1rem;
+    text-align: center;
+}
+
+.product-price:hover{
+    border: 0.2rem #C25F28 solid;
+}
+
+.dollar-icon,
+.percentage-icon{
+    color: #C25F28;
+    flex-grow: 2;
+    text-align: center;
+    font-size: 2.5rem;
+}
+
+#product-price,
+#word-cupon,
+#discount-percentage{
+    flex-grow: 1;
+    color: #88817D;
+    border: none;
+    background-color:#222222;
+    padding:0 1rem ;
+    font-size: 1.6rem;
+}
+
+.container-answer{
+    display: flex;
+    width: 100%;
+    
+    justify-content: stretch;
+    flex-direction: row;
+    
+}
+
+.answer{
+    flex-grow: 3;
+    padding: 0 1rem;
+}
+
+.container-answer button{
+    flex-grow: 1;
+    height: 4.6rem;
+    background-color: #C25F28;
+    color: #fff;
+    border: none;
+    border-radius: 1rem;
+    font-size: 1.8rem;
+}
+
+#product-price,
+#word-cupon,
+#discount-percentage:focus-visible{
+    outline: none;
+}
+
+
+#div-word-cupon,
+#span-word-cupon{
+    display: none;
+    justify-content: stretch;
+}
+
+#div-word-cupon input{
+    width: 18.9rem;
+    color: #C25F28;
+}
+
+#yes-cupon:checked{
+   color: red;
+}

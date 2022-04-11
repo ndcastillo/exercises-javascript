@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200&display=swap" rel="stylesheet">
+    <script src="./script/app.js"></script>
+
+</head>
+<body>
+    
+    <div class="container">
+    <header>
+        <ul>
+            <li>
+                <figure>
+                    <img src="./img/logoDiscountCalculator.svg" alt="">
+                </figure>
+            </li>
+            <li>
+                <h1>Discount Calculator</h1>
+            </li>
+        </ul>
+    </header>
+
+    <main>
+        <section class="calculator">
+
+            <form action="">
+                <label for="product-price">
+                    <!-- Product Price Original -->
+                    <span class="item">Insert Product Price</span>
+                    <div class="product-price">
+                        <div class="dollar-icon">$</div>
+                        <input type="number" id="product-price" placeholder="1000">
+                    </div>
+                </label>
+                    <!-- Cupons -->
+                    
+                    <div class="label-cupon">
+                    <span class="item">Have a Cupon?</span>
+                   
+                    <label for="yes-cupon">
+                    <span>Yes</span>
+                    <input 
+                            type="radio" 
+                            id="yes-cupon" 
+                            onclick="showDivCupon()" 
+                            name="option-cupon"
+                            /></label>
+
+                    <label for="no-cupon">
+                    <span>No</span>
+                    <input 
+                            type="radio" 
+                            id="no-cupon" 
+                            checked
+                            onclick="showDivCupon()" 
+                            name="option-cupon"
+                            />
+                    </label>
+                    </div>
+                    
+                <label for="word-cupon">
+                    <span class="item" id="span-word-cupon">Insert Value Cupon</span>
+                    <div class="product-price" id="div-word-cupon">
+                        <figure>
+                            <img src="./img/cuponIcon.svg" alt="">
+                        </figure>
+                        <input type="text" id="word-cupon" />
+                    </div>
+                </label>
+
+                <label for="discount-percentage">
+                    <!-- % Discount -->
+                    <span class="item">Insert discount percentage (%)</span>
+                    <div class="product-price" class="discount-percentage">
+                        <div class="percentage-icon">%</div>
+                        <input type="number" id="discount-percentage" placeholder="10">
+                    </div>
+                </label>
+
+                <!-- Button -->
+                <div class="container-answer">
+                    
+                    <div class="answer" >
+                        <span>Total Price</span>
+                        <br>
+                        <span class="dollar-icon">$</span>
+                        <span id="answer"></span>
+                    </div>
+                    
+                    <button type="button" onclick="discountCalculate('product-price','discount-percentage')">Calculate</button>
+                
+                </div>
+            </form>
+        </section>
+    </main>
+    </div>
+
+</body>
+</html>
